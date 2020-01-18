@@ -3,7 +3,7 @@
 ## Introduction
 This is a simple fun project for anyone that is looking to get started with ReactJS front-end development library. In this project, I've developed a quick and easy application that fetches a users profile from GitHub (using [GitHub Open API](https://developer.github.com/v3/)) and displays the information recieved.
 
-<img width="1093" alt="GitHub Card App with ReactJS" src="https://raw.githubusercontent.com/Kamparia/ithub-card-app-react-demo/blob/master/public/screenshot.jpg">
+<img width="1093" style="text-align: center;" alt="GitHub Card App with ReactJS" src="https://raw.githubusercontent.com/Kamparia/github-card-app-react-demo/master/public/screenshot.jpg">
 
 ## Live Demo
 [Click here](https://kamparia.github.io/github-card-app-react-demo/) to view demo.
