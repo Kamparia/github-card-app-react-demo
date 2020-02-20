@@ -1,13 +1,17 @@
 import React from 'react';
-import axios from 'axios';
-import './App.css';
 
+import Alert from './Alert.js'
+import Card from './Card.js'
+import Form from './Form.js'
+
+import './App.css';
 
 /*******************************
       The GitHub Cards App 
  *******************************/
 
 // Alert component
+/*
 class Alert extends React.Component {
   render() {
     return(
@@ -30,8 +34,10 @@ class Alert extends React.Component {
     );
   }
 }
+*/
 
 // Card Component
+/*
 class Card extends React.Component { 
   // render
   render() {
@@ -62,8 +68,10 @@ class Card extends React.Component {
     );
   } 
 }
+*/
 
 // Form component
+/*
 class Form extends React.Component {
   constructor(props){
     super(props);
@@ -114,6 +122,7 @@ class Form extends React.Component {
     );
   } 
 }
+*/
 
 /**
  * ROOT COMPONENT
