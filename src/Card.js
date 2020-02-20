@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Card - stateless component
-class Card extends React.Component { 
+class Card extends Component { 
   // render
   render() {
+    const profiles = this.props.profiles;
     return (
       <div>
-        {this.props.profiles.length === 0 ? (
+        {profiles.length === 0 ? (
           <h3 className="no-record-txt">Card is empty...</h3>
         ) : (
-          this.props.profiles.map(profile => {
+          profiles.map(profile => {
             return (
              <div key={profile.id} className="card">
                 <div className="github-profile">         

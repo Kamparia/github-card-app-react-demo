@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Alert - stateless component
-class Alert extends React.Component {
+class Alert extends Component {
   render() {
+    const messages = this.props.errorMessages;
     return(
       <div>
-        {this.props.errorMessages.length === 0 ? (
+        {messages.length === 0 ? (
           <div></div>
         ) : (
-          this.props.errorMessages.map(profile => {
+          messages.map(profile => {
             return (
               <div className="alert alert-danger alert-dismissible fade show" role="alert">
-                {this.props.errorMessages}
+                {messages}
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close" onClick={() => this.props.delMessages()}>
                   <span aria-hidden="true">&times;</span>
                 </button>

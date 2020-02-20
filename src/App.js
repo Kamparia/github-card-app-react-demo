@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Alert from './Alert.js'
 import Card from './Card.js'
@@ -13,7 +13,7 @@ import './App.css';
 /**
  * ROOT COMPONENT
  */
-class App extends React.Component {
+class App extends Component {
   constructor(props){
     super(props);
     this.state = {
