@@ -18,7 +18,7 @@ class Card extends Component {
                   <div className="info">
                     <div className="name">{profile.name}</div>
                     <div className="bio">{profile.bio}</div>
-                    <div className="profile_url"><a href={profile.html_url} target="_blank">View GitHub Profile</a></div>
+                    <div className="profile_url"><a href={profile.html_url} target="_blank" rel="noopener noreferrer">View GitHub Profile</a></div>
                   </div>
                   <button type="button" className="remove-card close" aria-label="Close" onClick={() => this.props.delProfile(profile.id)}>
                     <span aria-hidden="true" className="">&times;</span>

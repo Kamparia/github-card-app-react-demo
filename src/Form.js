@@ -20,7 +20,7 @@ class Form extends Component {
     await axios.get(api_endpoint).then(function (response) {
                   submit.addProfile(response.data);
                 }).catch(function (err) {
-                  if(err.message == 'Request failed with status code 404'){
+                  if(err.message === 'Request failed with status code 404'){
                     submit.addMessage('GitHub account/username not found.');
                   } else {
                     submit.addMessage(err.message);  
